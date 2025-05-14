@@ -5,7 +5,7 @@ function App() {
   const [answer, setAnswer] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/get-answer')
+    fetch('http://56.228.24.13:3000/api/get-answer')
       .then((res) => res.json())
       .then((data) => setAnswer(data.data));
   }, []);
